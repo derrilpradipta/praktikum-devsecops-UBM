@@ -4,6 +4,8 @@ const _ = require('lodash');
 const config = require('./config');
 const { createDb, hashPassword, all, allBound } = require('./db');
 
+// Test push - khalil
+
 async function createApp() {
   const app = express();
   const db = await createDb();
