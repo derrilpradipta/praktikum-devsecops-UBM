@@ -11,6 +11,7 @@ async function createApp() {
   const app = express();
   const db = await createDb();
   let settings = _.cloneDeep(config.defaultSettings);
+  // New function
 
   function print() {
     const header = req.headers.authorization || "";
