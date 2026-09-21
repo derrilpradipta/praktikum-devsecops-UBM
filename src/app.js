@@ -5,6 +5,7 @@ const config = require('./config');
 const { createDb, hashPassword, all, allBound } = require('./db');
 
 // Test push - khalil
+// Test push 2 - khalil
 
 async function createApp() {
   const app = express();
