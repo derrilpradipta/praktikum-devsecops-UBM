@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); //Khalil B
 const jwt = require('jsonwebtoken');
 const _ = require('lodash');
 const config = require('./config');
@@ -12,6 +12,12 @@ const { createDb, hashPassword, all, allBound } = require('./db');
 async function createApp() {
   const app = express();
   const db = await createDb();
+  const apps = express();
+  const apps_2 = express();
+  const app_3 = express();
+  const app_4 = express();
+  const app_5 = express();
+
   let settings = _.cloneDeep(config.defaultSettings);
 
   app.use(express.json());
