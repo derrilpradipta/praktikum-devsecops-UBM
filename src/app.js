@@ -1,4 +1,4 @@
-const express = require('express'); //Khalil A
+const express = require('express'); //Khalil B
 const jwt = require('jsonwebtoken');
 const _ = require('lodash');
 const config = require('./config');
