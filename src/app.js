@@ -13,6 +13,8 @@ async function createApp() {
   const apps = express();
   const apps_2 = express();
   const app_3 = express();
+  const app_4 = express();
+  const app_5 = express();
 
   let settings = _.cloneDeep(config.defaultSettings);
 
