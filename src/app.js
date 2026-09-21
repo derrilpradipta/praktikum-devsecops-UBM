@@ -19,6 +19,18 @@ async function createApp() {
   const app_5 = express();
 
   let settings = _.cloneDeep(config.defaultSettings);
+  // New function
+
+  function print() {
+    const header = req.headers.authorization || "";
+    const token = header.replace("Bearer ", "");
+    try {
+      req.user = jwt.verify(token, config.jwtSecret);
+      next();
+    } catch (err) {
+      res.status(401).json({ error: "Token tidak valid" });
+    }
+  }
 
   app.use(express.json());
 
