@@ -1,8 +1,13 @@
-const express = require("express");
-const jwt = require("jsonwebtoken");
-const _ = require("lodash");
-const config = require("./config");
-const { createDb, hashPassword, all, allBound } = require("./db");
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const _ = require('lodash');
+const config = require('./config');
+const { createDb, hashPassword, all, allBound } = require('./db');
+
+// Test push - khalil
+// Test push 2 - khalil
+
+// test daniels
 
 async function createApp() {
   const app = express();
